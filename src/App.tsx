@@ -16,7 +16,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 import BlogPage from "./pages/BlogPage";
-import ScrollToTop from "./components/layout/scrollToTop";
+import ScrollToTop from "./components/ScrolltoTop";
 
 const queryClient = new QueryClient();
 
