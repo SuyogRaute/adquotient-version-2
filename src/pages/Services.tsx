@@ -6,31 +6,30 @@ import { Button } from "@/components/ui/button";
 import {
   Tv,
   Radio,
-  Target,
   Brain,
-  Users,
-  LineChart,
   Layers,
-  Shield,
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
 
+
 const services = [
   {
-  icon: <Tv className="w-8 h-8" />,
-  title: "CTV & Linear",
-  description: "Unified video campaigns combining the scale of broadcast with the precision of digital streaming.",
-  benefits: [
-    "Direct access to 100+ top-tier networks",
-    "Household-level precision targeting",
-    "Real-time cross-device attribution",
-    "High-engagement interactive overlays",
-  ],
-  color: "secondary",
-},
+    icon: <Tv className="w-8 h-8" />,
+    image: "@/assets/ctv-service.png",
+    title: "CTV & Linear",
+    description: "Unified video campaigns combining the scale of broadcast with the precision of digital streaming.",
+    benefits: [
+      "Direct access to 100+ top-tier networks",
+      "Household-level precision targeting",
+      "Real-time cross-device attribution",
+      "High-engagement interactive overlays",
+    ],
+    color: "secondary",
+  },
   {
     icon: <Radio className="w-8 h-8" />,
+    image: "",
     title: "Addressable Linear",
     description: "Household-level targeting on traditional TV with digital precision.",
     benefits: [
@@ -41,20 +40,9 @@ const services = [
     ],
     color: "accent",
   },
-  // {
-  //   icon: <Target className="w-8 h-8" />,
-  //   title: "Linear TV (Cable/DTH)",
-  //   description: "PAN India cable and DTH network access for mass reach.",
-  //   benefits: [
-  //     "National & regional coverage",
-  //     "GEC, Sports, News channels",
-  //     "Prime-time placements",
-  //     "Optimized spot selection",
-  //   ],
-  //   color: "secondary",
-  // },
   {
     icon: <Brain className="w-8 h-8" />,
+    image: "",
     title: "AI-Powered Media Planning",
     description: "Predictive planning engine for intelligent media decisions.",
     benefits: [
@@ -65,32 +53,9 @@ const services = [
     ],
     color: "accent",
   },
-  // {
-  //   icon: <Users className="w-8 h-8" />,
-  //   title: "Audience Intelligence",
-  //   description: "Deep segmentation for precision targeting across screens.",
-  //   benefits: [
-  //     "Finance & behavior cohorts",
-  //     "Geographic segmentation",
-  //     "Content affinity mapping",
-  //     "Custom audience creation",
-  //   ],
-  //   color: "secondary",
-  // },
-  // {
-  //   icon: <LineChart className="w-8 h-8" />,
-  //   title: "Campaign Management",
-  //   description: "End-to-end campaign orchestration and optimization.",
-  //   benefits: [
-  //     "Dedicated account management",
-  //     "24/7 campaign monitoring",
-  //     "Creative optimization",
-  //     "A/B testing capabilities",
-  //   ],
-  //   color: "accent",
-  // },
   {
     icon: <Layers className="w-8 h-8" />,
+    image: "",
     title: "Cross-Channel Optimization",
     description: "Unified strategy across all screens for consistent impact.",
     benefits: [
@@ -101,18 +66,6 @@ const services = [
     ],
     color: "secondary",
   },
-  // {
-  //   icon: <Shield className="w-8 h-8" />,
-  //   title: "Measurement & Analytics",
-  //   description: "IAB/MRC/BARC accredited measurement with fraud detection.",
-  //   benefits: [
-  //     "Viewability metrics",
-  //     "Fraud detection",
-  //     "Custom dashboards",
-  //     "Raw log access",
-  //   ],
-  //   color: "accent",
-  // },
 ];
 
 const Services = () => {
@@ -187,16 +140,12 @@ const Services = () => {
                   </Link>
                 </div>
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                  <div className="glass rounded-3xl p-8 aspect-square flex items-center justify-center">
-                    <div
-                      className={`w-32 h-32 rounded-3xl flex items-center justify-center ${
-                        service.color === "secondary"
-                          ? "bg-gradient-primary"
-                          : "bg-accent"
-                      } text-navy-deep`}
-                    >
-                      <div className="scale-150">{service.icon}</div>
-                    </div>
+                  <div className="glass rounded-3xl p-2 overflow-hidden">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover rounded-2xl aspect-square"
+                    />
                   </div>
                 </div>
               </div>

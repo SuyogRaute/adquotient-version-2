@@ -65,7 +65,69 @@
     --sidebar-ring: 174 72% 56%;
   }
 }
+/* Add this to your CSS file (e.g., globals.css or index.css) */
 
+/* Low opacity background - won't disturb existing content */
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15; /* Low opacity - adjust between 0.1 to 0.3 */
+  z-index: 1; /* Above the section but below grid-pattern */
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+/* Keep existing elements in proper order */
+.hero-bg .grid-pattern {
+  z-index: 2;
+}
+
+.hero-bg .container {
+  z-index: 10; /* Keep this as is */
+}
+
+/* Method 2: With white overlay (Alternative - for better text readability) */
+.hero-bg-with-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('./assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Method 3: With dark overlay (if you have light-colored image) */
+.hero-bg-dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+html {
+  font-size: 18px; /* default is 16px */
+}
 @layer base {
   * {
     @apply border-border;

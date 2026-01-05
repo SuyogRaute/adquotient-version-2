@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Tv, Radio, Target, BarChart3 } from "lucide-react";
+import CTV from "@/assets/ctv-hero-bg.png"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden hero-bg pb-10">
       {/* Background Elements */}
       <div className="absolute inset-0 grid-pattern opacity-30" />
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse-slow" />
@@ -43,19 +44,19 @@ export function HeroSection() {
             >
               <Link to="/contact">
                 <Button variant="hero" size="xl">
-                  Start Your Campaign
+                  Schedule a Demo
                   <ArrowRight className="ml-2" />
                 </Button>
               </Link>
-              <Link to="/platform">
+              <Link to="/services">
                 <Button variant="outline" size="xl">
-                  Explore Platform
+                  Explore Services
                 </Button>
               </Link>
             </div>
 
             {/* Quick Stats */}
-            <div
+            {/* <div
               className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-border animate-fade-in"
               style={{ animationDelay: "0.4s" }}
             >
@@ -105,7 +106,7 @@ export function HeroSection() {
                   Cable TV HH
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Visual */}
@@ -117,38 +118,87 @@ export function HeroSection() {
               {/* Main Card */}
               <div className="glass rounded-3xl p-8 shadow-glow-teal">
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gradient-primary rounded-2xl p-6 text-navy-deep">
-                    <Tv className="w-8 h-8 mb-4" />
-                    <div className="font-display font-bold text-lg">
-                      CTV & Digital
+                  {/* Card 1: CTV & Linear */}
+                  <div className="relative rounded-2xl p-6 overflow-hidden group hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div className="absolute inset-0 opacity-100 group-hover:opacity-30 transition-opacity duration-300">
+                      <img
+                        src={CTV}
+                        alt=""
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
                     </div>
-                    <div className="text-sm opacity-80">Premium Reach</div>
-                  </div>
-                  <div className="bg-muted rounded-2xl p-6">
-                    <Radio className="w-8 h-8 mb-4 text-secondary" />
-                    <div className="font-display font-bold text-lg">
-                      Linear TV
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      Cable & DTH
-                    </div>
-                  </div>
-                  <div className="bg-muted rounded-2xl p-6">
-                    <Target className="w-8 h-8 mb-4 text-accent" />
-                    <div className="font-display font-bold text-lg">
-                      Addressable
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      Precision Targeting
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <div className="relative z-10 text-white flex flex-col h-full">
+                      <Tv className="w-10 h-10 mb-4 drop-shadow-lg" />
+                      <div className="mt-auto">
+                        <div className="font-display font-bold text-xl mb-1">
+                          CTV & Linear
+                        </div>
+                        <div className="text-sm opacity-90">Premium Reach</div>
+                      </div>
                     </div>
                   </div>
-                  <div className="bg-secondary/10 border border-secondary/30 rounded-2xl p-6">
-                    <BarChart3 className="w-8 h-8 mb-4 text-secondary" />
-                    <div className="font-display font-bold text-lg">
-                      AI Engine
+
+                  {/* Card 2: Cross-Channel */}
+                  <div className="relative bg-muted rounded-2xl p-6 overflow-hidden group hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div className="absolute inset-0 opacity-100 group-hover:opacity-15 transition-opacity duration-300">
+                      <img
+                        src={CTV}
+                        alt=""
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
                     </div>
-                    <div className="text-sm text-muted-foreground">
-                      Smart Planning
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <div className="relative z-10 text-white flex flex-col h-full">
+                      <Radio className="w-10 h-10 mb-4 drop-shadow-lg" />
+                      <div className="mt-auto">
+                        <div className="font-display font-bold text-xl mb-1">
+                          Cross-Channel
+                        </div>
+                        <div className="text-sm opacity-90">Optimization</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Card 3: Addressable Linear */}
+                  <div className="relative bg-muted rounded-2xl p-6 overflow-hidden group hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div className="absolute inset-0 opacity-100 group-hover:opacity-15 transition-opacity duration-300">
+                      <img
+                        src={CTV}
+                        alt=""
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <div className="relative z-10 text-white flex flex-col h-full">
+                      <Target className="w-10 h-10 mb-4 drop-shadow-lg" />
+                      <div className="mt-auto">
+                        <div className="font-display font-bold text-xl mb-1">
+                          Addressable Linear
+                        </div>
+                        <div className="text-sm opacity-90">Precision Targeting</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Card 4: AI-Powered */}
+                  <div className="relative bg-secondary/10 border border-secondary/30 rounded-2xl p-6 overflow-hidden group hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div className="absolute inset-0 opacity-100 group-hover:opacity-15 transition-opacity duration-300">
+                      <img
+                        src={CTV}
+                        alt=""
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <div className="relative z-10 text-white flex flex-col h-full">
+                      <BarChart3 className="w-10 h-10 mb-4 drop-shadow-lg" />
+                      <div className="mt-auto">
+                        <div className="font-display font-bold text-xl mb-1">
+                          AI-Powered
+                        </div>
+                        <div className="text-sm opacity-90">Media Planning</div>
+                      </div>
                     </div>
                   </div>
                 </div>
