@@ -18,17 +18,17 @@ import {
 
 const services = [
   {
-    icon: <Tv className="w-8 h-8" />,
-    title: "CTV & Digital Advertising",
-    description: "Premium connected TV and digital inventory across major platforms.",
-    benefits: [
-      "Access to 100+ premium publishers",
-      "Advanced demographic targeting",
-      "Cross-device attribution",
-      "Interactive ad formats",
-    ],
-    color: "secondary",
-  },
+  icon: <Tv className="w-8 h-8" />,
+  title: "CTV & Linear",
+  description: "Unified video campaigns combining the scale of broadcast with the precision of digital streaming.",
+  benefits: [
+    "Direct access to 100+ top-tier networks",
+    "Household-level precision targeting",
+    "Real-time cross-device attribution",
+    "High-engagement interactive overlays",
+  ],
+  color: "secondary",
+},
   {
     icon: <Radio className="w-8 h-8" />,
     title: "Addressable Linear",
@@ -41,18 +41,18 @@ const services = [
     ],
     color: "accent",
   },
-  {
-    icon: <Target className="w-8 h-8" />,
-    title: "Linear TV (Cable/DTH)",
-    description: "PAN India cable and DTH network access for mass reach.",
-    benefits: [
-      "National & regional coverage",
-      "GEC, Sports, News channels",
-      "Prime-time placements",
-      "Optimized spot selection",
-    ],
-    color: "secondary",
-  },
+  // {
+  //   icon: <Target className="w-8 h-8" />,
+  //   title: "Linear TV (Cable/DTH)",
+  //   description: "PAN India cable and DTH network access for mass reach.",
+  //   benefits: [
+  //     "National & regional coverage",
+  //     "GEC, Sports, News channels",
+  //     "Prime-time placements",
+  //     "Optimized spot selection",
+  //   ],
+  //   color: "secondary",
+  // },
   {
     icon: <Brain className="w-8 h-8" />,
     title: "AI-Powered Media Planning",
@@ -65,30 +65,30 @@ const services = [
     ],
     color: "accent",
   },
-  {
-    icon: <Users className="w-8 h-8" />,
-    title: "Audience Intelligence",
-    description: "Deep segmentation for precision targeting across screens.",
-    benefits: [
-      "Finance & behavior cohorts",
-      "Geographic segmentation",
-      "Content affinity mapping",
-      "Custom audience creation",
-    ],
-    color: "secondary",
-  },
-  {
-    icon: <LineChart className="w-8 h-8" />,
-    title: "Campaign Management",
-    description: "End-to-end campaign orchestration and optimization.",
-    benefits: [
-      "Dedicated account management",
-      "24/7 campaign monitoring",
-      "Creative optimization",
-      "A/B testing capabilities",
-    ],
-    color: "accent",
-  },
+  // {
+  //   icon: <Users className="w-8 h-8" />,
+  //   title: "Audience Intelligence",
+  //   description: "Deep segmentation for precision targeting across screens.",
+  //   benefits: [
+  //     "Finance & behavior cohorts",
+  //     "Geographic segmentation",
+  //     "Content affinity mapping",
+  //     "Custom audience creation",
+  //   ],
+  //   color: "secondary",
+  // },
+  // {
+  //   icon: <LineChart className="w-8 h-8" />,
+  //   title: "Campaign Management",
+  //   description: "End-to-end campaign orchestration and optimization.",
+  //   benefits: [
+  //     "Dedicated account management",
+  //     "24/7 campaign monitoring",
+  //     "Creative optimization",
+  //     "A/B testing capabilities",
+  //   ],
+  //   color: "accent",
+  // },
   {
     icon: <Layers className="w-8 h-8" />,
     title: "Cross-Channel Optimization",
@@ -101,18 +101,18 @@ const services = [
     ],
     color: "secondary",
   },
-  {
-    icon: <Shield className="w-8 h-8" />,
-    title: "Measurement & Analytics",
-    description: "IAB/MRC/BARC accredited measurement with fraud detection.",
-    benefits: [
-      "Viewability metrics",
-      "Fraud detection",
-      "Custom dashboards",
-      "Raw log access",
-    ],
-    color: "accent",
-  },
+  // {
+  //   icon: <Shield className="w-8 h-8" />,
+  //   title: "Measurement & Analytics",
+  //   description: "IAB/MRC/BARC accredited measurement with fraud detection.",
+  //   benefits: [
+  //     "Viewability metrics",
+  //     "Fraud detection",
+  //     "Custom dashboards",
+  //     "Raw log access",
+  //   ],
+  //   color: "accent",
+  // },
 ];
 
 const Services = () => {

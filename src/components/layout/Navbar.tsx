@@ -10,9 +10,10 @@ const navLinks = [
   { name: "Services", path: "/services" },
   { name: "Platform", path: "/platform" },
   { name: "Inventory", path: "/inventory" },
-  { name: "Audience", path: "/audience" },
+  { name: "Blogs", path: "/blogs" },
+  // { name: "Audience", path: "/audience" },
   { name: "Workflow", path: "/workflow" },
-  { name: "Measurement", path: "/measurement" },
+  // { name: "Measurement", path: "/measurement" },
   { name: "Case Studies", path: "/case-studies" },
 ];
 

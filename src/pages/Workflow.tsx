@@ -82,7 +82,7 @@ const Workflow = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeader
             badge="Campaign Lifecycle"
-            title="6 Steps to Success"
+            title="AdQuotient Roadmap"
             description="Our proven process ensures campaigns launch on time and perform above expectations."
           />
 

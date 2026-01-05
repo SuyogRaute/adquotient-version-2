@@ -15,6 +15,8 @@ import CaseStudies from "./pages/CaseStudies";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
+import BlogPage from "./pages/BlogPage";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -34,6 +36,7 @@ const App = () => (
           <Route path="/measurement" element={<Measurement />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blogs" element={<BlogPage/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

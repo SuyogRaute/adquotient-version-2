@@ -13,50 +13,50 @@ const stats = [
 ];
 
 const audienceTypes = [
-  {
-    category: "Finance Cohorts",
-    icon: <Wallet className="w-6 h-6" />,
-    segments: [
-      { name: "Digital Wallet Users", reach: "15M+" },
-      { name: "EMI Shoppers", reach: "10M+" },
-      { name: "Stock/MF Investors", reach: "8M+" },
-      { name: "Active Traders", reach: "3M+" },
-    ],
-    color: "secondary",
-  },
-  {
-    category: "Online Behavior",
-    icon: <TrendingUp className="w-6 h-6" />,
-    segments: [
-      { name: "E-commerce Shoppers", reach: "25M+" },
-      { name: "Quick Commerce Users", reach: "12M+" },
-      { name: "Ride-hailing Users", reach: "18M+" },
-      { name: "Food Delivery Users", reach: "20M+" },
-    ],
-    color: "accent",
-  },
-  {
-    category: "Geographic",
-    icon: <MapPin className="w-6 h-6" />,
-    segments: [
-      { name: "Metro Markets", reach: "Top 8 cities" },
-      { name: "Tier 2 Cities", reach: "40+ cities" },
-      { name: "Regional Focus", reach: "State-wise" },
-      { name: "NCCS Segmentation", reach: "Premium" },
-    ],
-    color: "secondary",
-  },
-  {
-    category: "Content Affinity",
-    icon: <Film className="w-6 h-6" />,
-    segments: [
-      { name: "Sports Enthusiasts", reach: "30M+" },
-      { name: "GEC Viewers", reach: "40M+" },
-      { name: "Regional Content", reach: "35M+" },
-      { name: "News Followers", reach: "25M+" },
-    ],
-    color: "accent",
-  },
+  // {
+  //   category: "Finance Cohorts",
+  //   icon: <Wallet className="w-6 h-6" />,
+  //   segments: [
+  //     { name: "Digital Wallet Users", reach: "15M+" },
+  //     { name: "EMI Shoppers", reach: "10M+" },
+  //     { name: "Stock/MF Investors", reach: "8M+" },
+  //     { name: "Active Traders", reach: "3M+" },
+  //   ],
+  //   color: "secondary",
+  // },
+  // {
+  //   category: "Online Behavior",
+  //   icon: <TrendingUp className="w-6 h-6" />,
+  //   segments: [
+  //     { name: "E-commerce Shoppers", reach: "25M+" },
+  //     { name: "Quick Commerce Users", reach: "12M+" },
+  //     { name: "Ride-hailing Users", reach: "18M+" },
+  //     { name: "Food Delivery Users", reach: "20M+" },
+  //   ],
+  //   color: "accent",
+  // },
+  // {
+  //   category: "Geographic",
+  //   icon: <MapPin className="w-6 h-6" />,
+  //   segments: [
+  //     { name: "Metro Markets", reach: "Top 8 cities" },
+  //     { name: "Tier 2 Cities", reach: "40+ cities" },
+  //     { name: "Regional Focus", reach: "State-wise" },
+  //     { name: "NCCS Segmentation", reach: "Premium" },
+  //   ],
+  //   color: "secondary",
+  // },
+  // {
+  //   category: "Content Affinity",
+  //   icon: <Film className="w-6 h-6" />,
+  //   segments: [
+  //     { name: "Sports Enthusiasts", reach: "30M+" },
+  //     { name: "GEC Viewers", reach: "40M+" },
+  //     { name: "Regional Content", reach: "35M+" },
+  //     { name: "News Followers", reach: "25M+" },
+  //   ],
+  //   color: "accent",
+  // },
 ];
 
 export function AudienceSection() {

@@ -154,16 +154,16 @@ export function HeroSection() {
                 </div>
               </div>
 
-              {/* Floating Elements */}
-              <div className="absolute -top-6 -right-6 glass rounded-xl p-4 animate-float">
+              {/* Floating Elements
+              <div className="absolute -top-6 -right-6 glass rounded-xl p-4    animate-float">
                 <div className="text-xs text-muted-foreground mb-1">
                   Live Campaigns
                 </div>
                 <div className="text-xl font-display font-bold text-secondary">
                   247
                 </div>
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="absolute -bottom-6 -left-6 glass rounded-xl p-4 animate-float"
                 style={{ animationDelay: "1s" }}
               >
@@ -173,7 +173,7 @@ export function HeroSection() {
                 <div className="text-xl font-display font-bold text-accent">
                   3.8x
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
