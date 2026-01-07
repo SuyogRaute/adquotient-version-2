@@ -6,7 +6,7 @@ import CTV from "@/assets/ctv-hero-bg.png"
 export function HeroSection() {
   return (
     <>
-      <section className="relative min-h-screen flex items-center overflow-hidden pb-10">
+      <section className="relative min-h-screen flex items-center overflow-hidden pb-10 hero-bg">
         {/* Background Elements */}
         <div className="absolute inset-0 grid-pattern opacity-30" />
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse-slow" />
