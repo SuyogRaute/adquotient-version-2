@@ -5,22 +5,22 @@ import { ArrowRight, Tv, Radio, Target, BarChart3 } from "lucide-react";
 export function HeroSection() {
   return (
     <>
-      <section className="relative min-h-[85vh] sm:min-h-screen flex items-center overflow-hidden hero-bg py-16 sm:py-20 md:py-0">
-        {/* Background Elements */}
-        <div className="absolute inset-0 grid-pattern opacity-30" />
-        <div className="absolute top-1/4 -left-32 w-64 h-64 sm:w-96 sm:h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-1/4 -right-32 w-64 h-64 sm:w-96 sm:h-96 bg-accent/20 rounded-full blur-3xl animate-pulse-slow" />
+      <section className="relative min-h-[85vh] sm:min-h-screen flex items-center overflow-hidden hero-bg py-16 sm:py-24 md:py-0 ">
+  {/* Background Elements */}
+  <div className="absolute inset-0 grid-pattern opacity-30" />
+  <div className="absolute top-1/4 -left-32 w-64 h-64 sm:w-96 sm:h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse-slow" />
+  <div className="absolute bottom-1/4 -right-32 w-64 h-64 sm:w-96 sm:h-96 bg-accent/20 rounded-full blur-3xl animate-pulse-slow" />
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
-            {/* Left Content */}
-            <div className="space-y-4 sm:space-y-6 md:space-y-8">
-              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-secondary/10 border border-secondary/20 animate-fade-in">
-                <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                <span className="text-secondary text-xs sm:text-sm font-medium">
-                  AI-Powered Media Intelligence
-                </span>
-              </div>
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-3">
+    <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
+      {/* Left Content */}
+      <div className="space-y-4 sm:space-y-6 md:space-y-8">
+        <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-secondary/10 border border-secondary/20 animate-fade-in">
+          <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
+          <span className="text-secondary text-xs sm:text-sm font-medium">
+            AI-Powered Media Intelligence
+          </span>
+        </div>
 
               <h1
                 className="font-display text-[1.75rem] leading-[1.2] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold animate-fade-in"
