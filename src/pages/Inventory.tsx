@@ -42,7 +42,7 @@ const inventoryCategories = [
   },
   {
     icon: <Home className="w-8 h-8" />,
-    title: "Jio Connected Homes",
+    title: "Connected Homes",
     description: "Access to India's largest connected home ecosystem.",
     metrics: ["20M+ Homes", "Family Audiences", "Smart TV Ready"],
     color: "secondary",
@@ -56,14 +56,14 @@ const inventoryCategories = [
   },
 ];
 
-const highlights = [
-  { value: "20M+", label: "Connected Homes" },
-  { value: "21M", label: "DTH Homes" },
-  { value: "500M", label: "Mobile Users" },
-  { value: "240M", label: "Online Shoppers" },
-  { value: "21M", label: "CTV Households" },
-  { value: "20M", label: "Cable TV Households" },
-];
+// const highlights = [
+//   { value: "20M+", label: "Connected Homes" },
+//   { value: "21M", label: "DTH Homes" },
+//   { value: "500M", label: "Mobile Users" },
+//   { value: "240M", label: "Online Shoppers" },
+//   { value: "21M", label: "CTV Households" },
+//   { value: "20M", label: "Cable TV Households" },
+// ];
 const Inventory = () => {
   return (
     <Layout>
@@ -88,7 +88,7 @@ const Inventory = () => {
       </section>
 
       {/* Stats Bar */}
-      <section className="py-12 bg-gradient-dark border-y border-border">
+      {/* <section className="py-12 bg-gradient-dark border-y border-border">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {highlights.map((stat) => (
@@ -101,7 +101,7 @@ const Inventory = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Inventory Grid */}
       <section className="py-24">

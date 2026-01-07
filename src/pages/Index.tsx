@@ -15,6 +15,7 @@ const whyChoose = [
   "Real-time performance optimization",
   "IAB/MRC/BARC accredited measurement",
   "No channel fragmentation—cross-screen consistency",
+  "Professional Video & Display Creative Solutions.",
 ];
 
 const Index = () => {
@@ -23,7 +24,7 @@ const Index = () => {
       <HeroSection />
       
       {/* Why Choose Section */}
-      <section className="py-24 relative">
+      <section className="py-16 relative">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -33,7 +34,7 @@ const Index = () => {
                 description="We eliminate complexity, unify fragmented channels, and deliver AI-driven precision for maximum advertising impact."
                 centered={false}
               />
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-1 mb-8">
                 {whyChoose.map((item, index) => (
                   <li
                     key={item}

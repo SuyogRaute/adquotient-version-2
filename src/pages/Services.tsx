@@ -10,6 +10,12 @@ import {
   Layers,
   ArrowRight,
   CheckCircle,
+  Film,
+  LayoutGrid,
+  Smartphone,
+  Sparkles,
+  Video,
+  Zap,
 } from "lucide-react";
 
 
@@ -66,6 +72,91 @@ const services = [
     ],
     color: "secondary",
   },
+  {
+    icon: <Video className="w-8 h-8" />,
+    image: "",
+    title: "Short-Form Social Videos",
+    description:
+      "Scroll-stopping short-form content designed to capture attention instantly and drive retention.",
+    benefits: [
+      "Reels, Shorts & micro-stories",
+      "Hook-first storytelling",
+      "Optimized for vertical viewing",
+      "High-retention formats",
+    ],
+    color: "secondary",
+  },
+  {
+    icon: <Zap className="w-8 h-8" />,
+    image: "",
+    title: "Performance-Driven Ad Creatives",
+    description:
+      "High-conversion ad creatives engineered with strong hooks, clear messaging, and compelling CTAs.",
+    benefits: [
+      "Conversion-focused messaging",
+      "A/B-ready creative variants",
+      "Strong hooks & CTAs",
+      "Designed for paid performance",
+    ],
+    color: "accent",
+  },
+  {
+    icon: <Film className="w-8 h-8" />,
+    image: "",
+    title: "Brand Films & Product Stories",
+    description:
+      "Cinematic brand films, explainers, and product demos that build trust and drive brand recall.",
+    benefits: [
+      "Brand films & launch videos",
+      "Explainers & product demos",
+      "Narrative-led storytelling",
+      "High production value",
+    ],
+    color: "secondary",
+  },
+  {
+    icon: <Sparkles className="w-8 h-8" />,
+    image: "",
+    title: "Motion Graphics & Animation",
+    description:
+      "Dynamic motion graphics and animated typography that elevate storytelling and engagement.",
+    benefits: [
+      "Animated typography",
+      "Motion-led storytelling",
+      "Visual emphasis on key messages",
+      "Lightweight & scalable assets",
+    ],
+    color: "accent",
+  },
+  {
+    icon: <LayoutGrid className="w-8 h-8" />,
+    image: "",
+    title: "Platform-Optimized Edits",
+    description:
+      "Creatives tailored for every platform to ensure maximum performance and native viewing experience.",
+    benefits: [
+      "Meta, YouTube & LinkedIn optimized",
+      "OTT & CTV-ready formats",
+      "Aspect-ratio specific edits",
+      "Platform-native storytelling",
+    ],
+    color: "secondary",
+  },
+  {
+    icon: <Smartphone className="w-8 h-8" />,
+    image: "",
+    title: "Device-Specific Creative Design",
+    description:
+      "Designs optimized for mobile, desktop, TV, and connected screens to ensure visual clarity and impact.",
+    benefits: [
+      "Mobile-first design approach",
+      "CTV & large-screen optimization",
+      "Responsive creative layouts",
+      "Consistent brand experience",
+    ],
+    color: "accent",
+  },
+
 ];
 
 const Services = () => {
