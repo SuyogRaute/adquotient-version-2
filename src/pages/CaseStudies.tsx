@@ -57,18 +57,18 @@ const CaseStudies = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-24 relative">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 relative">
         <div className="absolute inset-0 grid-pattern opacity-20" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-6">
+            <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-secondary/10 text-secondary text-xs sm:text-sm font-medium mb-4 sm:mb-6">
               Case Studies
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
               Proven{" "}
               <span className="text-gradient">Results</span>
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-2">
               See how leading brands achieve exceptional outcomes with
               AdQuotient's unified media solutions.
             </p>
@@ -77,23 +77,23 @@ const CaseStudies = () => {
       </section>
 
       {/* Case Studies */}
-      <section className="py-24 bg-gradient-dark">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="space-y-16">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-dark">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-8 sm:space-y-12 lg:space-y-16">
             {caseStudies.map((study, index) => (
               <div
                 key={study.id}
-                className="glass rounded-3xl p-8 md:p-12 animate-fade-in"
+                className="glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 animate-fade-in"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="grid lg:grid-cols-2 gap-12">
+                <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
                   {/* Left - Info */}
                   <div>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
                       {study.channels.map((channel) => (
                         <span
                           key={channel}
-                          className={`px-3 py-1 rounded-full text-sm ${
+                          className={`px-2.5 sm:px-3 py-1 rounded-full text-xs sm:text-sm ${
                             study.color === "secondary"
                               ? "bg-secondary/10 text-secondary"
                               : "bg-accent/10 text-accent"
@@ -103,43 +103,49 @@ const CaseStudies = () => {
                         </span>
                       ))}
                     </div>
-                    <h2 className="font-display text-3xl font-bold mb-2">
+                    <h2 className="font-display text-2xl sm:text-3xl font-bold mb-2">
                       {study.client}
                     </h2>
-                    <p className="text-muted-foreground mb-6">{study.industry}</p>
+                    <p className="text-sm sm:text-base text-muted-foreground mb-6">
+                      {study.industry}
+                    </p>
 
-                    <div className="space-y-6">
+                    <div className="space-y-4 sm:space-y-6">
                       <div>
-                        <h4 className="font-semibold text-secondary mb-2">
+                        <h4 className="font-semibold text-secondary mb-2 text-sm sm:text-base">
                           Challenge
                         </h4>
-                        <p className="text-muted-foreground">{study.challenge}</p>
+                        <p className="text-sm sm:text-base text-muted-foreground">
+                          {study.challenge}
+                        </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-accent mb-2">
+                        <h4 className="font-semibold text-accent mb-2 text-sm sm:text-base">
                           Solution
                         </h4>
-                        <p className="text-muted-foreground">{study.solution}</p>
+                        <p className="text-sm sm:text-base text-muted-foreground">
+                          {study.solution}
+                        </p>
                       </div>
                     </div>
                   </div>
 
                   {/* Right - Results */}
-                  <div>
-                    <h4 className="font-display font-semibold text-lg mb-6">
+                  <div className="mt-6 lg:mt-0">
+                    <h4 className="font-display font-semibold text-base sm:text-lg mb-4 sm:mb-6">
                       Results
                     </h4>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4">
                       {study.results.map((result) => (
                         <div
                           key={result.metric}
-                          className="bg-muted rounded-2xl p-6"
+                          className="bg-muted rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6"
                         >
-                          <div className="text-sm text-muted-foreground mb-2">
+                          <div className="text-xs sm:text-sm text-muted-foreground mb-1 sm:mb-2">
                             {result.metric}
                           </div>
                           <div
-                            className={`text-3xl font-display font-bold ${
+                            className={`text-2xl sm:text-3xl font-display font-bold ${
                               study.color === "secondary"
                                 ? "text-secondary"
                                 : "text-accent"
@@ -148,8 +154,8 @@ const CaseStudies = () => {
                             {result.value}
                           </div>
                           {result.change && (
-                            <div className="text-sm text-secondary mt-1 flex items-center gap-1">
-                              <TrendingUp className="w-4 h-4" />
+                            <div className="text-xs sm:text-sm text-secondary mt-1 flex items-center gap-1">
+                              <TrendingUp className="w-3 h-3 sm:w-4 sm:h-4" />
                               {result.change}
                             </div>
                           )}
@@ -165,41 +171,49 @@ const CaseStudies = () => {
       </section>
 
       {/* Summary Stats */}
-      <section className="py-24">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Aggregate Impact"
             title="Consistent Performance"
             description="Across all campaigns, we deliver measurable results."
           />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="glass rounded-2xl p-6 text-center">
-              <Users className="w-8 h-8 text-secondary mx-auto mb-4" />
-              <div className="text-3xl font-display font-bold text-gradient mb-2">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
+            <div className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
+              <Users className="w-6 h-6 sm:w-8 sm:h-8 text-secondary mx-auto mb-3 sm:mb-4" />
+              <div className="text-2xl sm:text-3xl font-display font-bold text-gradient mb-1 sm:mb-2">
                 500+
               </div>
-              <div className="text-muted-foreground">Campaigns Delivered</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">
+                Campaigns Delivered
+              </div>
             </div>
-            <div className="glass rounded-2xl p-6 text-center">
-              <Target className="w-8 h-8 text-accent mx-auto mb-4" />
-              <div className="text-3xl font-display font-bold text-gradient mb-2">
+            <div className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
+              <Target className="w-6 h-6 sm:w-8 sm:h-8 text-accent mx-auto mb-3 sm:mb-4" />
+              <div className="text-2xl sm:text-3xl font-display font-bold text-gradient mb-1 sm:mb-2">
                 3.8x
               </div>
-              <div className="text-muted-foreground">Average ROI</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">
+                Average ROI
+              </div>
             </div>
-            <div className="glass rounded-2xl p-6 text-center">
-              <BarChart3 className="w-8 h-8 text-secondary mx-auto mb-4" />
-              <div className="text-3xl font-display font-bold text-gradient mb-2">
+            <div className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
+              <BarChart3 className="w-6 h-6 sm:w-8 sm:h-8 text-secondary mx-auto mb-3 sm:mb-4" />
+              <div className="text-2xl sm:text-3xl font-display font-bold text-gradient mb-1 sm:mb-2">
                 87%
               </div>
-              <div className="text-muted-foreground">Avg. Viewability</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">
+                Avg. Viewability
+              </div>
             </div>
-            <div className="glass rounded-2xl p-6 text-center">
-              <TrendingUp className="w-8 h-8 text-accent mx-auto mb-4" />
-              <div className="text-3xl font-display font-bold text-gradient mb-2">
+            <div className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
+              <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-accent mx-auto mb-3 sm:mb-4" />
+              <div className="text-2xl sm:text-3xl font-display font-bold text-gradient mb-1 sm:mb-2">
                 95%
               </div>
-              <div className="text-muted-foreground">Client Retention</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">
+                Client Retention
+              </div>
             </div>
           </div>
         </div>
