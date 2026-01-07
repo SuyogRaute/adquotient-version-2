@@ -7,6 +7,7 @@ import { SectionHeader } from "@/components/ui/section-header";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import WHY from "@/assets/whyadquitent.png";
 
 const whyChoose = [
   "Unified Linear + Digital + CTV + Addressable access",
@@ -22,7 +23,7 @@ const Index = () => {
   return (
     <Layout>
       <HeroSection />
-      
+
       {/* Why Choose Section */}
       <section className="py-16 relative">
         <div className="container mx-auto px-4 lg:px-8">
@@ -55,11 +56,12 @@ const Index = () => {
             </div>
             <div className="relative">
               <div className="glass rounded-3xl p-8">
-                <div className="aspect-video bg-gradient-primary rounded-2xl flex items-center justify-center">
-                  <div className="text-center text-navy-deep">
-                    <div className="text-6xl font-display font-bold mb-2">3.8x</div>
-                    <div className="text-lg font-medium opacity-80">Average Campaign ROI</div>
-                  </div>
+                <div className="aspect-video bg-gradient-primary rounded-2xl overflow-hidden">
+                  <img
+                    src={WHY}
+                    alt="Campaign ROI Visualization"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="grid grid-cols-3 gap-4 mt-6">
                   <div className="text-center">

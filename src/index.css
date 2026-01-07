@@ -79,7 +79,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.15; /* Low opacity - adjust between 0.1 to 0.3 */
+  opacity: 0.3; /* Low opacity - adjust between 0.1 to 0.3 */
   z-index: 1; /* Above the section but below grid-pattern */
   pointer-events: none; /* Allows clicks to pass through */
 }

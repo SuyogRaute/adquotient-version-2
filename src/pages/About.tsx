@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SectionHeader } from "@/components/ui/section-header";
 import { CTASection } from "@/components/sections/CTASection";
 import { Users, Target, Lightbulb, Award } from "lucide-react";
+import MSSION from "@/assets/ourmission.png";
 
 const values = [
   {
@@ -92,23 +93,12 @@ const About = () => {
               </p>
             </div>
             <div className="glass rounded-3xl p-8">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-muted rounded-2xl">
-                  <div className="text-4xl font-display font-bold text-secondary mb-2">2019</div>
-                  <div className="text-sm text-muted-foreground">Founded</div>
-                </div>
-                <div className="text-center p-6 bg-muted rounded-2xl">
-                  <div className="text-4xl font-display font-bold text-accent mb-2">50+</div>
-                  <div className="text-sm text-muted-foreground">Team Members</div>
-                </div>
-                <div className="text-center p-6 bg-muted rounded-2xl">
-                  <div className="text-4xl font-display font-bold text-secondary mb-2">100+</div>
-                  <div className="text-sm text-muted-foreground">Brand Partners</div>
-                </div>
-                <div className="text-center p-6 bg-muted rounded-2xl">
-                  <div className="text-4xl font-display font-bold text-accent mb-2">₹500Cr+</div>
-                  <div className="text-sm text-muted-foreground">Media Managed</div>
-                </div>
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src={MSSION}
+                  alt="AdQuotient company statistics and achievements"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
