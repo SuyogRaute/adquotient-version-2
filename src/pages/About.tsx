@@ -92,12 +92,12 @@ const About = () => {
                 brands achieve true cross-screen consistency.
               </p>
             </div>
-            <div className="glass rounded-3xl p-8">
+            <div className="glass rounded-3xl ">
               <div className="rounded-2xl overflow-hidden">
                 <img
                   src={MSSION}
                   alt="AdQuotient company statistics and achievements"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>

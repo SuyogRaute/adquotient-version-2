@@ -55,7 +55,7 @@ const Index = () => {
               </Link>
             </div>
             <div className="relative">
-              <div className="glass rounded-3xl p-8">
+              <div className="glass rounded-3xl ">
                 <div className="aspect-video bg-gradient-primary rounded-2xl overflow-hidden">
                   <img
                     src={WHY}
