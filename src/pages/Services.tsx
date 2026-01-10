@@ -3,6 +3,8 @@ import { SectionHeader } from "@/components/ui/section-header";
 import { CTASection } from "@/components/sections/CTASection";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import CTV_SERVICE_IMG from "@/assets/ctv&Linear-service.png";
+import ADRESSABLE_SERVICE_IMG from "@/assets/adressable-service.png";
 import {
   Tv,
   Radio,
@@ -16,13 +18,14 @@ import {
   Sparkles,
   Video,
   Zap,
+  ChevronDown,
 } from "lucide-react";
 
 
 const services = [
   {
     icon: <Tv className="w-8 h-8" />,
-    image: "@/assets/ctv-service.png",
+    image: CTV_SERVICE_IMG,
     title: "CTV & Linear",
     description: "Unified video campaigns combining the scale of broadcast with the precision of digital streaming.",
     benefits: [
@@ -35,7 +38,7 @@ const services = [
   },
   {
     icon: <Radio className="w-8 h-8" />,
-    image: "",
+    image: ADRESSABLE_SERVICE_IMG,
     title: "Addressable Linear",
     description: "Household-level targeting on traditional TV with digital precision.",
     benefits: [
@@ -163,24 +166,33 @@ const Services = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-24 relative">
+      <section className="py-24 relative service-bg overflow-hidden min-h-screen flex items-center">
         <div className="absolute inset-0 grid-pattern opacity-20" />
+
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-6">
               Our Services
             </span>
+
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Full-Stack{" "}
               <span className="text-gradient">Media Solutions</span>
             </h1>
+
             <p className="text-xl text-muted-foreground">
               From planning to measurement, we power every stage of your
               advertising journey with intelligence and precision.
             </p>
           </div>
         </div>
+
+        {/* ✅ Scroll Hint */}
+        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-20">
+          <ChevronDown className="h-8 w-8 text-secondary animate-bounce opacity-80" />
+        </div>
       </section>
+
 
       {/* Services Grid */}
       <section className="py-24 bg-gradient-dark">
@@ -189,17 +201,15 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
+                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                  }`}
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                   <div
-                    className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6 ${
-                      service.color === "secondary"
+                    className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6 ${service.color === "secondary"
                         ? "bg-secondary/10 text-secondary"
                         : "bg-accent/10 text-accent"
-                    }`}
+                      }`}
                   >
                     {service.icon}
                   </div>
@@ -213,11 +223,10 @@ const Services = () => {
                     {service.benefits.map((benefit) => (
                       <li key={benefit} className="flex items-center gap-3">
                         <CheckCircle
-                          className={`w-5 h-5 flex-shrink-0 ${
-                            service.color === "secondary"
+                          className={`w-5 h-5 flex-shrink-0 ${service.color === "secondary"
                               ? "text-secondary"
                               : "text-accent"
-                          }`}
+                            }`}
                         />
                         <span className="text-muted-foreground">{benefit}</span>
                       </li>
@@ -232,8 +241,8 @@ const Services = () => {
                 </div>
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                   <div className="glass rounded-3xl p-2 overflow-hidden">
-                    <img 
-                      src={service.image} 
+                    <img
+                      src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover rounded-2xl aspect-square"
                     />

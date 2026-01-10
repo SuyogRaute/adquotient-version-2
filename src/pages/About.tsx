@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { SectionHeader } from "@/components/ui/section-header";
 import { CTASection } from "@/components/sections/CTASection";
-import { Users, Target, Lightbulb, Award } from "lucide-react";
+import { Users, Target, Lightbulb, Award, ChevronDown } from "lucide-react";
 import MSSION from "@/assets/ourmission.png";
 
 const values = [
@@ -49,25 +49,34 @@ const About = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 grid-pattern opacity-20" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <span className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-6">
-              About AdQuotient
-            </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Redefining{" "}
-              <span className="text-gradient">Media Intelligence</span>
-            </h1>
-            <p className="text-xl text-muted-foreground">
-              We are a tech-driven AdSales and Media Planning partner, unifying
-              Linear, Digital, CTV, and Addressable advertising through AI-powered
-              intelligence.
-            </p>
-          </div>
-        </div>
-      </section>
+<section className="relative about-bg overflow-hidden min-h-screen flex items-center">
+  <div className="absolute inset-0 grid-pattern opacity-20" />
+
+  <div className="container mx-auto px-4 lg:px-8 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <span className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-6">
+        About AdQuotient
+      </span>
+
+      <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+        Redefining{" "}
+        <span className="text-gradient">Media Intelligence</span>
+      </h1>
+
+      <p className="text-xl text-muted-foreground">
+        We are a tech-driven AdSales and Media Planning partner, unifying
+        Linear, Digital, CTV, and Addressable advertising through AI-powered
+        intelligence.
+      </p>
+    </div>
+  </div>
+
+  {/* ✅ Scroll Hint */}
+  <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-20">
+    <ChevronDown className="h-8 w-8 text-secondary animate-bounce opacity-80" />
+  </div>
+</section>
+
 
       {/* Mission Section */}
       <section className="py-24 bg-gradient-dark relative">

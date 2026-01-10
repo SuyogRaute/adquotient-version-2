@@ -124,6 +124,75 @@
   background-position: center;
   z-index: 0;
 }
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Low opacity - adjust between 0.1 to 0.3 */
+  z-index: 1; /* Above the section but below grid-pattern */
+  pointer-events: none; /* Allows clicks to pass through */
+}
+/* About section background */
+.about-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./assets/about-bg.png'); /* your about image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.25; /* subtle */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Keep content above background */
+.about-bg .container {
+  position: relative;
+  z-index: 10;
+}
+.service-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./assets/service-bg.png'); /* your about image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.18; /* subtle */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Keep content above background */
+.service-bg .container {
+  position: relative;
+  z-index: 10;
+}
+
 
 html {
   font-size: 20px; /* default is 16px */
