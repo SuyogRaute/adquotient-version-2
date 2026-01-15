@@ -3,8 +3,11 @@ import { SectionHeader } from "@/components/ui/section-header";
 import { CTASection } from "@/components/sections/CTASection";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import CTV_SERVICE_IMG from "@/assets/ctv&Linear-service.png";
+import CTV_SERVICE_IMG from "@/assets/ctv-service.png";
 import ADRESSABLE_SERVICE_IMG from "@/assets/adressable-service.png";
+import CCO from "@/assets/cross-ch-op-service.png";
+import APMP from "@/assets/ai-powerd-media-planing -service.png";
+import SFV from "@/assets/short -video-service.png";
 import {
   Tv,
   Radio,
@@ -51,7 +54,7 @@ const services = [
   },
   {
     icon: <Brain className="w-8 h-8" />,
-    image: "",
+    image: APMP,
     title: "AI-Powered Media Planning",
     description: "Predictive planning engine for intelligent media decisions.",
     benefits: [
@@ -64,7 +67,7 @@ const services = [
   },
   {
     icon: <Layers className="w-8 h-8" />,
-    image: "",
+    image: CCO,
     title: "Cross-Channel Optimization",
     description: "Unified strategy across all screens for consistent impact.",
     benefits: [
@@ -77,7 +80,7 @@ const services = [
   },
   {
     icon: <Video className="w-8 h-8" />,
-    image: "",
+    image: SFV,
     title: "Short-Form Social Videos",
     description:
       "Scroll-stopping short-form content designed to capture attention instantly and drive retention.",
