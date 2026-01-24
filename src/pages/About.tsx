@@ -141,7 +141,7 @@ const About = () => {
       </section>
 
       {/* Leadership Section */}
-      <section className="py-24 bg-gradient-dark">
+      {/* <section className="py-24 bg-gradient-dark">
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeader
             badge="Leadership"
@@ -165,7 +165,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <CTASection />
     </Layout>
