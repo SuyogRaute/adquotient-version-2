@@ -35,6 +35,7 @@ pipeline {
               env.REGISTRY       = cfg.registry
               env.REGISTRY_IMAGE = cfg.registry_image
               env.DOCKER_IMAGE   = "${cfg.registry_image}:${BUILD_NUMBER}"
+              env.ADDITIONAL_DOMAINS = (cfg.additional_domains ?: []).join(',')
             }
           }
         }
@@ -78,7 +79,8 @@ pipeline {
                             -e "docker_image=${DOCKER_IMAGE}" \
                             -e "registry=${REGISTRY}" \
                             -e "registry_user=${REGISTRY_USER}" \
-                            -e "registry_pass=${REGISTRY_PASS}"
+                            -e "registry_pass=${REGISTRY_PASS}" \
+                            -e "additional_domains=${ADDITIONAL_DOMAINS}"
                     """
                 }
             }
