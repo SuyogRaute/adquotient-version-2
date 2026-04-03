@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Platform", path: "/platform" },
   { name: "Inventory", path: "/inventory" },
   { name: "Blogs", path: "/blogs" },
+  { name: "AI Microdrama", path: "/ai-microdramas" },
   // { name: "Audience", path: "/audience" },
   { name: "Workflow", path: "/workflow" },
   // { name: "Measurement", path: "/measurement" },
