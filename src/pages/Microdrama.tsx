@@ -159,40 +159,40 @@ const Section6_WinningFormats = () => (
   </section>
 );
 
-const Section8_SampleWork = () => {
-  const { scrollRef, pause, resume } = useAutoScroll();
-  return (
-    <section className="py-12 md:py-20 bg-black">
-      <div className="container mx-auto px-4 lg:px-8 text-center md:text-left mb-10">
-        <p className="text-yellow-500 text-[10px] font-bold tracking-[0.3em] uppercase mb-4">SHOWCASE</p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4">Our <span className="text-yellow-500">Stories</span></h2>
-      </div>
-      <div className="container mx-auto px-4 lg:px-8">
-        <div ref={scrollRef} onMouseEnter={pause} onMouseLeave={resume} onTouchStart={pause} onTouchEnd={resume} className="flex overflow-x-auto snap-x snap-mandatory gap-6 no-scrollbar pb-8 md:grid md:grid-cols-3 md:overflow-visible">
-          {[
-            { title: "The Last Promise", category: "FAMILY DRAMA", duration: "2:15", img: "/format-family.webp" },
-            { title: "Midnight Caller", category: "CRIME THRILLER", duration: "1:45", img: "/format-crime.webp" },
-            { title: "Second Chance", category: "MORAL TWIST", duration: "2:30", img: "/format-moral.webp" }
-          ].map((it, i) => (
-            <div key={i} className="min-w-[90%] md:min-w-full snap-start group relative rounded-3xl overflow-hidden border border-white/5 bg-[#121212] transition-all hover:border-yellow-500/20 shadow-2xl">
-              <div className="aspect-video relative overflow-hidden bg-black/40">
-                <img src={it.img} alt={it.title} className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <PlayCircle className="w-16 h-16 text-yellow-500/80 group-hover:scale-110 transition-all duration-300" />
-                </div>
-                <div className="absolute bottom-4 right-4 px-2.5 py-1 bg-black/90 rounded-md text-[10px] font-bold text-white font-mono">{it.duration}</div>
-              </div>
-              <div className="p-6 text-left">
-                <p className="text-yellow-500 text-[10px] font-bold tracking-widest mb-1.5 uppercase">{it.category}</p>
-                <h4 className="font-display text-xl font-bold text-white leading-none">{it.title}</h4>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+// const Section8_SampleWork = () => {
+//   const { scrollRef, pause, resume } = useAutoScroll();
+//   return (
+//     <section className="py-12 md:py-20 bg-black">
+//       <div className="container mx-auto px-4 lg:px-8 text-center md:text-left mb-10">
+//         <p className="text-yellow-500 text-[10px] font-bold tracking-[0.3em] uppercase mb-4">SHOWCASE</p>
+//         <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4">Our <span className="text-yellow-500">Stories</span></h2>
+//       </div>
+//       <div className="container mx-auto px-4 lg:px-8">
+//         <div ref={scrollRef} onMouseEnter={pause} onMouseLeave={resume} onTouchStart={pause} onTouchEnd={resume} className="flex overflow-x-auto snap-x snap-mandatory gap-6 no-scrollbar pb-8 md:grid md:grid-cols-3 md:overflow-visible">
+//           {[
+//             { title: "The Last Promise", category: "FAMILY DRAMA", duration: "2:15", img: "/format-family.webp" },
+//             { title: "Midnight Caller", category: "CRIME THRILLER", duration: "1:45", img: "/format-crime.webp" },
+//             { title: "Second Chance", category: "MORAL TWIST", duration: "2:30", img: "/format-moral.webp" }
+//           ].map((it, i) => (
+//             <div key={i} className="min-w-[90%] md:min-w-full snap-start group relative rounded-3xl overflow-hidden border border-white/5 bg-[#121212] transition-all hover:border-yellow-500/20 shadow-2xl">
+//               <div className="aspect-video relative overflow-hidden bg-black/40">
+//                 <img src={it.img} alt={it.title} className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000" />
+//                 <div className="absolute inset-0 flex items-center justify-center">
+//                   <PlayCircle className="w-16 h-16 text-yellow-500/80 group-hover:scale-110 transition-all duration-300" />
+//                 </div>
+//                 <div className="absolute bottom-4 right-4 px-2.5 py-1 bg-black/90 rounded-md text-[10px] font-bold text-white font-mono">{it.duration}</div>
+//               </div>
+//               <div className="p-6 text-left">
+//                 <p className="text-yellow-500 text-[10px] font-bold tracking-widest mb-1.5 uppercase">{it.category}</p>
+//                 <h4 className="font-display text-xl font-bold text-white leading-none">{it.title}</h4>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
 
 const Section9_LeadForm = () => {
   const { toast } = useToast();
@@ -271,7 +271,7 @@ const Microdrama = () => {
           <h3 className="font-display text-2xl md:text-5xl font-black italic uppercase tracking-tighter text-white leading-none mx-auto max-w-4xl">"Scaling Human Imagination through Artificial Intelligence"</h3>
         </section>
 
-        <Section8_SampleWork />
+        {/* <Section8_SampleWork /> */}
         <Section9_LeadForm />
 
         <section className="py-24 bg-black text-center px-4 border-t border-white/5 relative group overflow-hidden">
