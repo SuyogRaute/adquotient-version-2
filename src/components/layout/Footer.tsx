@@ -98,11 +98,11 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-muted-foreground">
                 <Mail size={18} className="mt-1 text-secondary" />
-                <span>hello@adquotient.com</span>
+                <span>s@adquotient.media</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground">
                 <Phone size={18} className="mt-1 text-secondary" />
-                <span>+91 98765 43210</span>
+                <span>+91 98200 17733</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground">
                 <MapPin size={18} className="mt-1 text-secondary" />

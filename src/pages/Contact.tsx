@@ -163,7 +163,7 @@ const Contact = () => {
                       Phone
                     </label>
                     <Input
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 98200 17733"
                       value={formData.phone}
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
@@ -216,8 +216,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-display font-semibold mb-1">Email</h4>
-                    <p className="text-muted-foreground">hello@adquotient.com</p>
-                    <p className="text-muted-foreground">sales@adquotient.com</p>
+                    <p className="text-muted-foreground">s@adquotient.media</p>
                   </div>
                 </div>
 
@@ -227,8 +226,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-display font-semibold mb-1">Phone</h4>
-                    <p className="text-muted-foreground">+91 98765 43210</p>
-                    <p className="text-muted-foreground">+91 22 4567 8900</p>
+                    <p className="text-muted-foreground">+91 98200 17733</p>
                   </div>
                 </div>
 

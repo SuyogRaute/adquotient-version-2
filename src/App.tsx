@@ -13,6 +13,7 @@ import Workflow from "./pages/Workflow";
 import Measurement from "./pages/Measurement";
 import CaseStudies from "./pages/CaseStudies";
 import Contact from "./pages/Contact";
+import Microdrama from "./pages/Microdrama";
 import NotFound from "./pages/NotFound";
 
 import BlogPage from "./pages/BlogPage";
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/workflow" element={<Workflow />} />
           <Route path="/measurement" element={<Measurement />} />
           <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/ai-microdramas" element={<Microdrama />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<BlogPage/>} />
           <Route path="*" element={<NotFound />} />
